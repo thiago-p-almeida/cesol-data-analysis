@@ -34,7 +34,9 @@ jobs:
         run: npm ci
         
       - name: Build Evidence
-        run: npm run build
+        run: |
+          npm run sources
+          npm run build
         
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
