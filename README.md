@@ -1,13 +1,16 @@
 # CESOL Data Analysis
 
-<span style="color:gray">**Aviso:** Este sistema se trata de um showcase da versão original privada. Os dados e informações sensíveis foram modificados para manter a privacidade do negócio em sigilo e em adequação com a LGPD, mantendo apenas as métricas que foram aplicadas no projeto original, servindo então apenas como showcase.</span>
+<div style="color: #6c757d; font-size: 0.85em; border-left: 4px solid #6c757d; padding-left: 10px; margin-bottom: 20px;">
+⚠️ <b>Aviso:</b> Este sistema se trata de um showcase da versão original privada. Os dados e informações sensíveis foram modificados para manter a privacidade do negócio em sigilo e em adequação com a LGPD, mantendo apenas as métricas que foram aplicadas no projeto original, servindo então apenas como showcase.
+</div>
 
 [![Evidence](https://img.shields.io/badge/BI-Evidence.dev-blue.svg)](https://evidence.dev)
+[![DuckDB](https://img.shields.io/badge/Data-DuckDB-yellow.svg)](https://duckdb.org/)
 [![Node.js](https://img.shields.io/badge/Node.js-%3E%3D18.0.0-success)](https://nodejs.org/)
 
-# [🔗 Acessar Live Demo](https://thiago-p-almeida.github.io/cesol-data-analysis/)
+# [Acessar Live Demo](https://thiago-p-almeida.github.io/cesol-data-analysis/)
 
-## 📖 Visão Geral
+## ❖ Visão Geral
 
 O **CESOL Data Analysis** é um projeto de Business Intelligence (BI) e Data Analytics construído sobre o [Evidence.dev](https://evidence.dev/). Ele utiliza uma abordagem de *Modern Data Stack* para transformar modelos SQL em relatórios analíticos interativos, versionados e de alta performance.
 
@@ -18,7 +21,7 @@ O **CESOL Data Analysis** é um projeto de Business Intelligence (BI) e Data Ana
 
 ---
 
-## 🏗 Arquitetura e Pipeline de Dados
+## ⚙ Arquitetura e Pipeline de Dados
 
 O sistema faz parte de uma **Modern Data Stack** completa e eficiente, desenhada para garantir fluxo contínuo, escalabilidade e velocidade na análise de dados:
 
@@ -30,7 +33,7 @@ O sistema faz parte de uma **Modern Data Stack** completa e eficiente, desenhada
 
 ---
 
-## 🖼 Amostras
+## ■ Amostras
 
 Confira abaixo as telas e visualizações do painel construído:
 
@@ -41,7 +44,35 @@ Confira abaixo as telas e visualizações do painel construído:
 
 ---
 
-## 📁 Estrutura de Arquivos e Engenharia
+## ▤ Como Executar o Projeto
+
+Para rodar este projeto em sua máquina local, siga os passos abaixo:
+
+1. **Clone o repositório:**
+   ```bash
+   git clone https://github.com/thiago-p-almeida/cesol-data-analysis.git
+   cd cesol-data-analysis
+   ```
+
+2. **Instale as dependências:**
+   ```bash
+   npm install
+   ```
+
+3. **Construa as fontes de dados (DuckDB/Parquet):**
+   ```bash
+   npm run sources
+   ```
+
+4. **Inicie o servidor de desenvolvimento:**
+   ```bash
+   npm run dev
+   ```
+   Acesse `http://localhost:3000` em seu navegador para visualizar o painel analítico.
+
+---
+
+## ▤ Estrutura de Arquivos e Engenharia
 
 ```text
 cesol-data-analysis/
@@ -63,6 +94,6 @@ cesol-data-analysis/
 
 ---
 
-## 🛡 Segurança e LGPD
+## ◈ Segurança e LGPD
 
 Todo o fluxo de dados atende rigorosamente às diretrizes de Governança de Dados e à **LGPD**. Como se trata de um showcase, quaisquer Informações Pessoais Identificáveis (PII) ou dados financeiros sensíveis foram mascarados ou removidos logo nas camadas iniciais de processamento, evitando que a camada de BI (Evidence) manipule informações reais do projeto original.
