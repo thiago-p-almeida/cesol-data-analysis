@@ -1,14 +1,23 @@
-# CESOL Data Analysis
+> ⚠️ **Aviso de Confidencialidade e Proteção de Dados:** Este sistema se trata de um **showcase da versão original privada**. Os dados e informações sensíveis foram modificados para manter a privacidade do negócio em sigilo e em adequação com a LGPD, mantendo apenas as métricas que foram aplicadas no projeto original, servindo então apenas como showcase.
 
-<div style="color: #6c757d; font-size: 0.85em; border-left: 4px solid #6c757d; padding-left: 10px; margin-bottom: 20px;">
-⚠️ <b>Aviso:</b> Este sistema se trata de um showcase da versão original privada. Os dados e informações sensíveis foram modificados para manter a privacidade do negócio em sigilo e em adequação com a LGPD, mantendo apenas as métricas que foram aplicadas no projeto original, servindo então apenas como showcase.
+<br>
+
+<div align="center">
+  <h1>❖ CESOL Data Analysis</h1>
+  <h3>Business Intelligence e Data Analytics</h3>
+  
+  [![Evidence.dev](https://img.shields.io/badge/Evidence.dev-BI-blue?style=for-the-badge)](https://evidence.dev)
+  [![DuckDB](https://img.shields.io/badge/DuckDB-Database-yellow?style=for-the-badge)](https://duckdb.org/)
+  [![Node.js](https://img.shields.io/badge/Node.js-%3E%3D18.0.0-success?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/)
 </div>
 
-[![Evidence](https://img.shields.io/badge/BI-Evidence.dev-blue.svg)](https://evidence.dev)
-[![DuckDB](https://img.shields.io/badge/Data-DuckDB-yellow.svg)](https://duckdb.org/)
-[![Node.js](https://img.shields.io/badge/Node.js-%3E%3D18.0.0-success)](https://nodejs.org/)
+<br>
 
-# [Acessar Live Demo](https://thiago-p-almeida.github.io/cesol-data-analysis/)
+<div align="center">
+  <h2>🌐 <a href="https://thiago-p-almeida.github.io/cesol-data-analysis/" target="_blank">Acessar Demonstração ao Vivo (Live Demo)</a></h2>
+</div>
+
+<br>
 
 ## ❖ Visão Geral
 
@@ -21,7 +30,7 @@ O **CESOL Data Analysis** é um projeto de Business Intelligence (BI) e Data Ana
 
 ---
 
-## ⚙ Arquitetura e Pipeline de Dados
+## ⬢ Arquitetura e Pipeline de Dados
 
 O sistema faz parte de uma **Modern Data Stack** completa e eficiente, desenhada para garantir fluxo contínuo, escalabilidade e velocidade na análise de dados:
 
@@ -33,18 +42,43 @@ O sistema faz parte de uma **Modern Data Stack** completa e eficiente, desenhada
 
 ---
 
-## ■ Amostras
+## ⬚ Amostras do Painel
 
 Confira abaixo as telas e visualizações do painel construído:
 
-![Amostra 1 do Painel](./images/amostra1.png)
-![Amostra 2 do Painel](./images/amostra2.png)
+<div align="center">
+  <img src="./images/amostra1.png" alt="Amostra 1 do Painel" width="800">
+  <br><br>
+  <img src="./images/amostra2.png" alt="Amostra 2 do Painel" width="800">
+</div>
 
 *(Imagens do showcase do painel analítico)*
 
 ---
 
-## ▤ Como Executar o Projeto
+## ▤ Estrutura de Arquivos e Engenharia
+
+```text
+cesol-data-analysis/
+├── data/                      # Arquivos transformados via Python
+│   ├── alunos_ativos.parquet
+│   ├── churn_motivos.parquet
+│   └── custos_operacionais.parquet
+├── pages/                     # Páginas Markdown definindo as visualizações do BI
+│   └── index.md
+├── sources/                   # Conectores e modelos SQL para o DuckDB
+│   └── cesol_data/
+│       ├── connection.yaml
+│       ├── alunos_ativos.sql
+│       ├── churn_motivos.sql
+│       └── custos_operacionais.sql
+├── evidence.config.yaml       # Configuração central do Evidence
+└── package.json               # Dependências do projeto
+```
+
+---
+
+## ⚙︎ Como Executar o Projeto
 
 Para rodar este projeto em sua máquina local, siga os passos abaixo:
 
@@ -72,28 +106,11 @@ Para rodar este projeto em sua máquina local, siga os passos abaixo:
 
 ---
 
-## ▤ Estrutura de Arquivos e Engenharia
-
-```text
-cesol-data-analysis/
-├── data/                      # Arquivos transformados via Python
-│   ├── alunos_ativos.parquet
-│   ├── churn_motivos.parquet
-│   └── custos_operacionais.parquet
-├── pages/                     # Páginas Markdown definindo as visualizações do BI
-│   └── index.md
-├── sources/                   # Conectores e modelos SQL para o DuckDB
-│   └── cesol_data/
-│       ├── connection.yaml
-│       ├── alunos_ativos.sql
-│       ├── churn_motivos.sql
-│       └── custos_operacionais.sql
-├── evidence.config.yaml       # Configuração central do Evidence
-└── package.json               # Dependências do projeto
-```
-
----
-
 ## ◈ Segurança e LGPD
 
 Todo o fluxo de dados atende rigorosamente às diretrizes de Governança de Dados e à **LGPD**. Como se trata de um showcase, quaisquer Informações Pessoais Identificáveis (PII) ou dados financeiros sensíveis foram mascarados ou removidos logo nas camadas iniciais de processamento, evitando que a camada de BI (Evidence) manipule informações reais do projeto original.
+
+---
+<div align="center">
+  <small>Engenharia de Dados e BI desenvolvido por <a href="https://github.com/thiago-p-almeida">Thiago Almeida</a></small>
+</div>
