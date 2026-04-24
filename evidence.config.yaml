@@ -6,27 +6,27 @@ theme:
   colorPalettes:
     default:
       light:
-        - "#236aa4"
-        - "#45a1bf"
-        - "#a5cdee"
-        - "#8dacbf"
-        - "#85c7c6"
-        - "#d2c6ac"
-        - "#f4b548"
-        - "#8f3d56"
-        - "#71b9f4"
-        - "#46a485"
+        - "#1F4E79"
+        - "#2E6D9C"
+        - "#4A89B8"
+        - "#7BA7C7"
+        - "#A7C4D9"
+        - "#6E7F8D"
+        - "#A6B3BE"
+        - "#C8D1D8"
+        - "#355C7D"
+        - "#5A7D9A"
       dark:
-        - "#236aa4"
-        - "#45a1bf"
-        - "#a5cdee"
-        - "#8dacbf"
-        - "#85c7c6"
-        - "#d2c6ac"
-        - "#f4b548"
-        - "#8f3d56"
-        - "#71b9f4"
-        - "#46a485"
+        - "#4A89B8"
+        - "#5F98C2"
+        - "#7BA7C7"
+        - "#A7C4D9"
+        - "#C8D1D8"
+        - "#8FA2B1"
+        - "#B7C3CC"
+        - "#D3DAE0"
+        - "#6B93B5"
+        - "#8BAFCC"
   colorScales:
     default:
       light:
@@ -49,14 +49,14 @@ theme:
       light: "#0284c7"
       dark: "#38bdf8"
     positive:
-      light: "#16a34a"
-      dark: "#4ade80"
+      light: "#2E7D32"
+      dark: "#66BB6A"
     warning:
-      light: "#f8c900"
-      dark: "#fbbf24"
+      light: "#B7791F"
+      dark: "#E6A23C"
     negative:
-      light: "#dc2626"
-      dark: "#f87171"
+      light: "#C0392B"
+      dark: "#E57373"
 
 plugins:
   components:
@@ -80,6 +80,5 @@ plugins:
     "@evidence-dev/trino": { }
     "@evidence-dev/motherduck": { }
 
-# evidence.config.yaml
 deployment:
   basePath: /cesol-data-analysis
